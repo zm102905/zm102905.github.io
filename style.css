@@ -20,6 +20,9 @@ a{
 
 .container {
     background-color: rgb(172, 201, 183);
+    /* background-image: url('https://www.treehugger.com/thmb/A4cnc-HEPn9nmD2EZutg0dR6EgQ=/2121x1414/filters:fill(auto,1)/flyingfrog-17085228bd6c4ea6b8fccb864d74430c.jpg');
+    background-position: center;
+    background-size: cover; */
     margin: 1rem auto;
     max-width: 100rem;
     width: 90%;
@@ -27,13 +30,15 @@ a{
 }
 
 .header{
-    margin-left: 550px;
+    margin-left: 30px;
     display: flex;
     justify-content:space-between;
 }
 
-.header__logo{
-    align-items: center;
+.header__nav_listItem{
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .header__nav_listItem:hover{
@@ -76,7 +81,7 @@ a{
 .project__photo {
     text-align: center;
     height: auto;
-    max-width: 80%;
+    max-width: 15rem;
     border-radius: 70px;
     border: white 5px solid;
 }
