@@ -19,10 +19,8 @@ a{
 }
 
 .container {
-    background-color: rgb(172, 201, 183);
-    /* background-image: url('https://www.treehugger.com/thmb/A4cnc-HEPn9nmD2EZutg0dR6EgQ=/2121x1414/filters:fill(auto,1)/flyingfrog-17085228bd6c4ea6b8fccb864d74430c.jpg');
-    background-position: center;
-    background-size: cover; */
+    background-image: url("assets/background.jpg");
+    background-size: cover;
     margin: 1rem auto;
     max-width: 100rem;
     width: 90%;
@@ -35,6 +33,15 @@ a{
     justify-content:space-between;
 }
 
+
+.header__nav_list{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: white 5px solid;
+    border-radius:20px; 
+}
+
 .header__nav_listItem{
     display: inline;
     text-decoration: none;
@@ -42,7 +49,9 @@ a{
 }
 
 .header__nav_listItem:hover{
+    padding: 3px;
     background-color: rgb(126, 126, 104);
+    border-radius: 20px;;
 }
 
 .profile__heading{
@@ -59,6 +68,11 @@ a{
 .profile__pic{
     height: auto;
     max-width:15rem;
+    border-radius: 100px;
+    border: white 5px solid;
+}
+.aboutMe{
+    padding: 30px;
     border-radius: 100px;
     border: white 5px solid;
 }
@@ -119,11 +133,13 @@ a{
     
 }
 
-.social__links_wrapper:hover{
+.social__icon:hover{
     background-color: rgb(126, 126, 104);
+    padding: 5px;
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 1033px) {
+@media only screen and (max-width: 767px) {
     .header{
         align-items: center;
         display: flex;
