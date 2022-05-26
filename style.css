@@ -28,11 +28,22 @@ a{
 }
 
 .header{
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
     display: flex;
     justify-content:space-between;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes color {
+    0% {color: red;}
+    25% {color: purple;}
+    50% {color: black;}
+    75% {color: blue;}
+    100% {color: yellow;}
+}
 
 .header__nav_list{
     margin-top: 10px;
@@ -42,21 +53,27 @@ a{
     border-radius:20px; 
 }
 
+
 .header__nav_listItem{
     display: inline;
     text-decoration: none;
     list-style-type: none;
+    
 }
 
 .header__nav_listItem:hover{
     padding: 3px;
     background-color: rgb(126, 126, 104);
     border-radius: 20px;;
+    transition: 1s;
 }
 
 .profile__heading{
     display: flex;
     justify-content: center;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .profile{
@@ -68,20 +85,28 @@ a{
 .profile__pic{
     height: auto;
     max-width:15rem;
-    border-radius: 100px;
+    margin-left: 20px;
+    border-radius: 60px;
     border: white 5px solid;
 }
+
+
 .aboutMe{
-    padding: 30px;
+    padding: 40px;
     border-radius: 100px;
     border: white 5px solid;
+    margin-top: 60px;
 }
+
 
 .projects__column_title{
     text-align: center;
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .projects{
@@ -92,11 +117,12 @@ a{
     margin-right: 20px;
 }
 
+
 .project__photo {
     text-align: center;
     height: auto;
     max-width: 15rem;
-    border-radius: 70px;
+    border-radius: 90px;
     border: white 5px solid;
 }
 .project__description {
@@ -105,13 +131,14 @@ a{
 
 .projects__column{
     border: white 5px solid;
-    border-radius:20px;
+    border-radius:60px;
     text-align: center;
     margin-bottom:30px
 }
 
 .projects__column:hover {
     background-color: rgb(126, 126, 104);
+    transition: 1s;
   }
 
 .footer{
@@ -137,7 +164,9 @@ a{
     background-color: rgb(126, 126, 104);
     padding: 5px;
     border-radius: 10px;
+    transition: 1s;
 }
+
 
 @media only screen and (max-width: 767px) {
     .header{
