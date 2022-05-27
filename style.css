@@ -100,11 +100,7 @@ a{
 .profile__pic{
     height: auto;
     max-width:15rem;
-<<<<<<< HEAD
     margin-top: 20px;
-=======
-    margin-left: 14px;
->>>>>>> 3e13ed44963ae4607d794aecd19dff97c0ca8cfa
     border-radius: 60px;
     border: white 5px solid;
 }
