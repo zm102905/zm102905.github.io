@@ -189,17 +189,15 @@ a{
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 990px) {
     .header{
         align-items: center;
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .header__nav_list {
         display: flex;
-        margin: 0;
         flex-direction: column;
         justify-content: center;
     }
