@@ -122,7 +122,6 @@ a{
 .projects__column_title{
     display:flex;
     justify-content: center;
-    color: black;
     margin-top: 20px;
     margin-bottom: 20px;
     animation-name: color;
@@ -134,11 +133,9 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 8px;
-    color: black;
     margin-left: 20px;
     margin-right: 20px;
 }
-
 
 .project__photo {
     height: auto;
