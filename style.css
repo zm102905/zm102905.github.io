@@ -8,88 +8,56 @@
 
 html{
     color: #000000;
-    font: 18px/1.618 sans-serif;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
-    font-size: 30px;
-    display:flex;
-    justify-content: center;
-    animation-name: color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-span{
-    border: white 5px solid;
-    border-radius:60px;
-    padding:20px;
+.name{
+    font-size: 50px;
 }
 
 a{
+    color: beige;
     text-decoration: none;
-    animation-name: color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
 }
 
 
-.container {
-    background-image: url("assets/background.jpg");
+.container { 
+    background-color: rgba(31, 22, 11, 0.795);
     background-size: cover;
     margin: 1rem auto;
     max-width: 100rem;
     width: 90%;
-
 }
 
 .header{
-    margin-right: 40px;
-    display: flex;
-    justify-content: flex-end;
-    animation-name: color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    
-}
-
-@keyframes color {
-    0% {color: red;}
-    25% {color: purple;}
-    50% {color: black;}
-    75% {color: blue;}
-    100% {color: yellow;}
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    text-align: center; 
 }
 
 .header__nav_list{
-    margin-top: 10px;
-    padding: 5px;
-    border: white 5px solid;
-    border-radius:20px; 
-      
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .header__nav_listItem{
-    display: inline;
+    padding:5px;
+    font-size: 15px;
     text-decoration: none;
-    list-style-type: none;
-    padding:10px
+    list-style: none;
 }
-
 .header__nav_listItem:hover{
-    padding: 3px;
     background-color: rgb(126, 126, 104);
-    border-radius: 20px;;
     transition: 1s;
 }
 
+.social__links_header{
+    display:flex;
+    justify-content: center;
+}
+
 .profile__heading{
+    background-color: beige;
     display: flex;
     justify-content: center;
-    animation-name: color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
 }
 
 .profile{
@@ -99,23 +67,36 @@ a{
 }
 .profile__pic{
     height: auto;
-    max-width:15rem;
+    max-width:20rem;
     margin-top: 20px;
-    border-radius: 60px;
+    border-radius: 20px;
     border: white 5px solid;
 }
 
+.computer{
+    height: auto;
+    max-width:15rem;
+    border-radius: 150px;
+    border: white 5px solid;
+}
+
+
 .profile__pic_wrapper{
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
 .aboutMe{
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
     padding: 40px;
-    border-radius: 100px;
+    border-radius: 15px;
     border: white 5px solid;
     margin-top: 60px;
+}
+
+.profile__heading{
+    margin-bottom: 20px;
 }
 
 
@@ -124,9 +105,15 @@ a{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    animation-name: color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    background-color: beige;
+}
+
+.project{
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    margin-left: 50px;
+    margin-right: 50px;
+    border: white 5px solid;
+    border-radius: 15px;
 }
 
 .projects{
@@ -138,18 +125,20 @@ a{
 }
 
 .project__photo {
-    height: auto;
-    max-width: 15rem;
-    border-radius: 90px;
+    height: 160px;
+    max-width: 10rem;
+    border-radius: 100px;
     border: white 5px solid;
 }
 .project__description {
     padding: 30px;
+    font-size: 12px;
+    height: 200px;
+    overflow-y: scroll;
 }
 
 .projects__column{
     border: white 5px solid;
-    border-radius:60px;
     text-align: center;
     margin-bottom:30px
 }
@@ -164,11 +153,18 @@ a{
     justify-content: space-between;
     margin-top: 30px;
     color: black;
-    margin-left: 20px;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
 }
 
 .social__links{
+    margin-top: 7px;
+    margin-bottom: 5px;
+    margin-right: 20px;
     display: flex;
+}
+.copyright{
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 
@@ -177,14 +173,6 @@ a{
     max-width: 30px;
     
 }
-
-.social__icon:hover{
-    background-color: rgb(126, 126, 104);
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
 
 @media only screen and (max-width: 990px) {
     .header{

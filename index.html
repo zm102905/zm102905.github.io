@@ -6,40 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zachary Martin: Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <nav class="header__nav">
+                <h1><span class="name">Zachary D. Martin</span></h1>
                 <ul class="header__nav_list">
                     <li class="header__nav_listItem" ><a href="#aboutMe">About Me</a></li>
-                    <li class="header__nav_listItem" ><a href="#projects">Projects</a></li>
+                    <li class="header__nav_listItem" ><a href="#project">Projects</a></li>
                 </ul>
             </nav>
+            <section class="social__links_header">
+                <figure class="social__links_wrapper">
+                <a href="https://www.linkedin.com/in/zachary-d-martin/" class="linkedIn">
+                    <img class = "social__icon" src="assets\icons\small-linkedin-icon-12.jpg" alt="Linked link">
+                </a>
+                </figure>
+
+                <figure class="social__links_wrapper">
+                <a href="https://github.com/zm102905" class="gitHub">
+                    <img class = "social__icon" class src="assets\icons\github.jpg" alt="Github link">
+                </a>
+                </figure>
+            </section>
         </header>
         <section class="profile"> 
-            <h1><span>Zachary D. Martin</span></h1>
             <figure class="profile__pic_wrapper">
+                <img class="computer" src="assets\computer.jpg" alt="space filler">
                 <img class="profile__pic" src="assets\profile.jpg" alt="Photo of me">
+                <img class="computer" src="assets\computer.jpg" alt="space filler">
             </figure>
             <article class="aboutMe" id="aboutMe">
                 <h2 class="profile__heading">Introduction</h2>
                 <p class-="profile__summary">Hello! My name is Zachary Martin, and I'm a software developer, with a passion for solving complex problems and building clean, efficient, working code. I'm currently enrolled in a top-rated software development bootcamp and will earn a certificate of software development upon completion in August 2022. Through hard work and dedication, I have gained a solid understanding of Java, Object-Oriented Programming (OOP), Spring, Thymeleaf, Source Control (Git and GitHub), and front-end development using HTML and CSS. Through my career as a developer, I hope to use my skills and knowledge base around Java and its frameworks and libraries, and front-end knowledge, to help improve the user experience. I am looking forward to a career in tech, and I believe I have a lot to contribute to any development team. Feel free to click any of the photos below to view the associated project in GitHub. If you're a recruiter or hiring manager, or if you would just like to connect, you can contact me at zm102905@gmail.com. Links to my Github and LinkIn profiles are also provided below.</p>
             </article>
         </section>
-        <h2 class="projects__column_title">Current Projects</h2>
-        <section class="projects" id="projects">
-            <article class="projects__column">
-                <h3 class="projects__column_title">Virtual Pet</h3>
-                <figure class="projects__column_figure">
-                    <a href="https://github.com/2022-April-Java-PT-Classroom/virtual-pet-zm102905">
-                       <img class = "project__photo" src="assets\virtualpet.jpg" alt="Virtual Pet"> 
-                    </a>
-                </figure>
-                <p class = "project__description">
-                    This is the first application I wrote while attending coding bootcamp. It's a simple, Java-based console application, where the user takes the role of an animal caretaker for a virtual dog. The player can interact with the virtual dog in a number of ways, which change the variable values of the pet object. A while loop was used in the main method, which iterates with every action and breaks out of the loop when the losing-conditions are met. A tick method was written and implimented into the loop, which simulates the passage of time. Writing this required a solid understanding of object and method creation, and class design.   
-                </p>
-            </article>
+        <section class="project" id="project">
+            <h2 class="projects__column_title">Current Projects</h2>
+            <div class="projects">
             <article class="projects__column">
                 <h3 class="projects__column_title">Virtual Pet Shelter</h3>
                 <figure class="projects__column_figure">
@@ -75,6 +83,40 @@
                     This is a spring boot/MVC web app/site, that categorizes and displays reviews of popular budget to mid-range freshwater spinning reels. The reviews/home page displays a list of all available reviews, and provides links to each individual product review. If you click on a product, it takes you to a review page, where it provides the product name, category, descrtiption, a photo, and a rating. There is a back button at the bottom, linking back to the reviews/home page.
                 </p>
             </article>
+            <article class="projects__column">
+                <h3 class="projects__column_title">Bird Watchers JPA</h3>
+                <figure class = "projects__column_figure">
+                    <a href="https://github.com/zm102905/team-1-bird-watchers-jpa">
+                        <img class = "project__photo" src="assets\bird.jpg" alt="Bird Watchers">
+                    </a>
+                </figure>
+                <p class="project__description">
+                    Used MVC architecture, spring boot, and JPA in a team environment, to create a website that shows different bird watching packages and information about bird watching.<br><br> Technologies used: Java, CSS, HTML, MVC architecture, Spring Boot, JPA,  Relational Databases, OOP,  Git, GitHub, Agile/Scrum methodology
+                </p>
+            </article>
+            <article class="projects__column">
+                <h3 class="projects__column_title">JAC's Twitchers SPA</h3>
+                <figure class = "projects__column_figure">
+                    <a href="https://github.com/zm102905/spa-team-2">
+                        <img class = "project__photo" src="assets\Fish.jpg" alt="SPA">
+                    </a>
+                </figure>
+                <p class="project__description">
+                    Collaborated with a team, to create for children, an educational  single page application that exposes kids, aged 6 to 13, to science. This site focuses on oceanic wildlife and the solar system. <br><br> Technologies used: Java, Javascript, React, CSS, HTML, Spring Boot, JSON, Relational Databases, OOP, REST API, Git, Github, Agile/Scrum methodology
+                </p>
+            </article>
+            <article class="projects__column">
+                <h3 class="projects__column_title">Footopolis</h3>
+                <figure class = "projects__column_figure">
+                    <a href="https://github.com/zm102905/final-project-team-4">
+                        <img class = "project__photo" src="assets\foot.jpg" alt="Foot">
+                    </a>
+                </figure>
+                <p class="project__description">
+                    Collaborated with a team, to create a React single page application, that serves as a one stop resource for foot care. This was the final project at WCCI coding bootcamp. It describes, provides symptoms, treatment information, and recommends products for various foot-related conditions. A podiatrist locator page helps users find a local podiatrist. A diagnostic quiz was also provided to help narrow down the cause of the symptoms they are experiencing.  Java, Javascript, React, CSS, HTML, Spring Boot, JSON, Relational Databases, OOP, REST API, Git, Github, Agile/Scrum methodology
+                </p>
+            </article>
+        </div>
         </section>
         <footer class="footer">
             <section class="copyright">&copy 2022 Zachary Martin </section>
