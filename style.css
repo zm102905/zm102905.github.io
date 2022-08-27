@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 
@@ -10,17 +9,20 @@ html{
     color: #000000;
 }
 
-.name{
+h1{
+    font-family: 'Cinzel', serif;
     font-size: 50px;
 }
 
 a{
+    font-family: monospace;
     color: beige;
     text-decoration: none;
 }
 
 
 .container { 
+    box-shadow: 10px 10px;
     background-color: rgba(31, 22, 11, 0.795);
     background-size: cover;
     margin: 1rem auto;
@@ -31,6 +33,7 @@ a{
 .header{
     background-image: linear-gradient(to right, #DECBA4, #3E5151);
     text-align: center; 
+    padding:20px;
 }
 
 .header__nav_list{
@@ -89,18 +92,31 @@ a{
 
 .aboutMe{
     background-image: linear-gradient(to right, #DECBA4, #3E5151);
-    padding: 40px;
+    /* padding: 40px; */
     border-radius: 15px;
     border: white 5px solid;
     margin-top: 60px;
 }
 
 .profile__heading{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
 }
 
+.profile__summary{
+    padding:10px;
+}
+
+p{
+    font-size: 12px;
+    padding:30px;
+    font-weight: bolder;
+    line-height: 15px;
+}
 
 .projects__column_title{
+    font-family: 'Cinzel', serif;
     display:flex;
     justify-content: center;
     margin-top: 20px;
@@ -119,15 +135,15 @@ a{
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap:10px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .project__photo {
-    height: 160px;
-    max-width: 10rem;
-    border-radius: 100px;
+    height: 100px;
+    max-width: auto;
+    border-radius: 15px;
     border: white 5px solid;
 }
 .project__description {
@@ -135,12 +151,15 @@ a{
     font-size: 12px;
     height: 200px;
     overflow-y: scroll;
+    
 }
 
 .projects__column{
     border: white 5px solid;
     text-align: center;
-    margin-bottom:30px
+    margin-bottom:30px;
+    box-shadow: 5px 5px;
+    
 }
 
 .projects__column:hover {
@@ -163,6 +182,7 @@ a{
     display: flex;
 }
 .copyright{
+    font-family: monospace;
     margin-top: 15px;
     margin-left: 20px;
 }
