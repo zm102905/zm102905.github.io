@@ -41,7 +41,7 @@ li{
 }
 
 .header__nav_listItem{
-    font-size: 15px;
+    font-size: 30px;
 }
 .header__nav_listItem:hover{
     padding:5px;
@@ -103,10 +103,10 @@ li{
 }
 
 p{
-    font-size: 12px;
+    font-size: 15px;
     padding:30px;
     font-weight: bolder;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .projects__column_title{
@@ -187,7 +187,7 @@ p{
 
 .social__icon{
     height:auto;
-    max-width: 15px;
+    max-width: 30px;
     
 }
 
