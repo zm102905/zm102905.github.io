@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    padding:5px;
+    list-style: none;
+}
 
 .container { 
     box-shadow: 10px 10px;
@@ -33,23 +37,15 @@ a{
 .header{
     background-image: linear-gradient(to right, #DECBA4, #3E5151);
     text-align: center; 
-    padding:20px;
-}
-
-.header__nav_list{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding:15px;
 }
 
 .header__nav_listItem{
-    padding:5px;
     font-size: 15px;
-    text-decoration: none;
-    list-style: none;
 }
 .header__nav_listItem:hover{
-    background-color: rgb(126, 126, 104);
-    transition: 1s;
+    padding:5px;
+    background-color: rgb(36, 36, 31);
 }
 
 .social__links_header{
@@ -70,17 +66,15 @@ a{
 }
 .profile__pic{
     height: auto;
-    max-width:20rem;
-    margin-top: 20px;
+    max-width:10rem;
+    margin-top: 10px;
     border-radius: 20px;
     border: white 5px solid;
 }
 
 .computer{
     height: auto;
-    max-width:15rem;
-    border-radius: 150px;
-    border: white 5px solid;
+    max-width:7rem;
 }
 
 
@@ -187,10 +181,13 @@ p{
     margin-left: 20px;
 }
 
+.social__links_wrapper{
+    padding:10px;
+}
 
 .social__icon{
     height:auto;
-    max-width: 30px;
+    max-width: 15px;
     
 }
 
