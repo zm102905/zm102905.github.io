@@ -98,15 +98,14 @@ li{
     font-size: 30px;
 }
 
-.profile__summary{
-    padding:10px;
-}
-
 p{
     font-size: 15px;
-    padding:30px;
+    padding:20px;
     font-weight: bolder;
     line-height: 20px;
+    height: 200px;
+    overflow-y: scroll;
+
 }
 
 .projects__column_title{
@@ -143,7 +142,6 @@ p{
 .project__description {
     padding: 30px;
     font-size: 12px;
-    height: 200px;
     overflow-y: scroll;
     
 }
@@ -159,6 +157,10 @@ p{
 .projects__column:hover {
     background-color: rgb(126, 126, 104);
     transition: 1s;
+  }
+
+  .play{
+    color:orangered;
   }
 
 .footer{
