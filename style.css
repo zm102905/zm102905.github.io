@@ -48,6 +48,10 @@ li{
     background-color: rgb(36, 36, 31);
 }
 
+.header__nav_list{
+    margin-bottom: 10px;
+}
+
 .social__links_header{
     display:flex;
     justify-content: center;
@@ -161,6 +165,8 @@ p{
 
   .play{
     color:orangered;
+    font-size: 20px;
+    font-weight: bolder;
   }
 
 .footer{
@@ -180,17 +186,16 @@ p{
 .copyright{
     font-family: monospace;
     margin-top: 15px;
-    margin-left: 20px;
-}
-
-.social__links_wrapper{
-    padding:10px;
 }
 
 .social__icon{
     height:auto;
     max-width: 30px;
-    
+    margin-left: 10px;
+}
+
+.social__icon:hover {
+    opacity: .5;
 }
 
 @media only screen and (max-width: 990px) {
